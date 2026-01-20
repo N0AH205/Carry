@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+@theme {
+  /* --- CRISP DARK MODE PALETTE --- */
+  /* Replaced 'Stone' (Brownish) with 'Zinc' (Neutral/Cool) */
+  
+  --color-bg: #09090b;          /* Zinc 950 (Deep Neutral Black) */
+  --color-card: #18181b;        /* Zinc 900 (Clean Dark Card) */
+  --color-border: #27272a;      /* Zinc 800 (Subtle Border) */
+  
+  --color-glass: #60a5fa;       /* Blue 400 (Glowing Blue) */
+  --color-rubber: #71717a;      /* Zinc 500 (Neutral Gray) */
+  
+  /* Text is now crisper */
+  --color-text: #f4f4f5;        /* Zinc 100 (Bright, Clean White-ish) */
+  --color-text-dim: #a1a1aa;    /* Zinc 400 (Muted, Clean Gray) */
+
+  /* --- Typography --- */
+  --font-sans: "Inter", system-ui, sans-serif;
+
+  /* --- Background --- */
+  /* Dots are neutral white at 6% opacity - subtle "Stars" look */
+  --background-image-dot-grid: radial-gradient(rgba(255, 255, 255, 0.06) 1px, transparent 1px);
+}
+
+/* Global Base Styles */
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  
+  background-image: var(--background-image-dot-grid);
+  background-size: 24px 24px;
+  
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
